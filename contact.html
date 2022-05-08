@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISAM/CONTACT US</title>
+    <!--page logo link-->
+    <link rel="icon" href="./images/favicon.png">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!--boostrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body id="pageup">
+     <!-- navbar section -->
+     <header-component></header-component>  
+
+    <!--slider section---->
+    <div class="bookslider">
+        <h1 class="text-center">CONTACT US</h1>
+    </div>
+    <div class="container pb-5 mb-5 contact_section">
+        <h1 class="text-center pb-5 mx-auto"> CONTACT US</h1>
+        <form class="">
+            <div class="row">
+                <div class="col-md-8 pb-5 contact">
+                    <p class="pb-2 pt-4">Send a Meassage</p>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstname">First Name</label>
+                            <input type="email" class="form-control" id="firstname" placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="contact_email">Email</label>
+                            <input type="email" class="form-control" id="contact_email" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Contact_Moblie">Password</label>
+                            <input type="number" class="form-control" id="Contact_Moblie" placeholder="Moblie No">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="contact_area">Meassge </label>
+                            <textarea class="form-control" id="contact_area" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <button class="btn text-center" type="submit">Submit</button>
+                </div>
+                <div class="col-md-4 pb-3 contact">
+                    <p class="pb-2 pt-4">Contact Info</p>
+                    <div class="row">
+                        <div class="col pl-4 pr-4">
+                            <span class="d-flex pb-4">
+                                <ion-icon name="location"></ion-icon>
+                                <span class="pl-2 ">Madurai, Tamilnadu India</span>
+                            </span>
+
+                            <span class="d-flex pb-4">
+                                <ion-icon name="mail"></ion-icon>
+                                <a href="mailto:vickypersonal@gmail.com" class="pl-2">Gmail</a>
+                            </span>
+
+                            <span class="d-flex pb-5">
+                                <ion-icon name="call"></ion-icon>
+                                <a href="tel:+919994539140" class="pl-2">9994539140</a>
+                            </span>
+
+                            <div class="map-responsive pt-3">
+                                <iframe
+                                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France"
+                                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+      <!-----footer wave----->
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#20a29e" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+      height="100%" viewBox="0 0 1600 122" class="foot-wave">
+      <defs>
+          <clipPath id="clip-path">
+              <rect id="Rectangle_235" data-name="Rectangle 235" width="100%" height="130px"
+                  transform="translate(0 16716)" fill="#fff"></rect>
+          </clipPath>
+      </defs>
+      <g id="Mask_Group_30" data-name="Mask Group 30" transform="translate(0 -16716)" clip-path="url(#clip-path)">
+          <path id="Path_7023" data-name="Path 7023"
+              d="M-432,11068.729s528-510.405,1440-329.294S2648,10476,2648,10476v2128.061l-3080-24.7Z"
+              transform="translate(-148 6017)" opacity="1"></path>
+      </g>
+  </svg>
+    <!-- footer section -->
+    <footer-component></footer-component>
+
+ <!-- Bottom to Up section start -->
+ <a href="#pageup" class="scrollup" style="text-decoration: none;">
+    <i class="fas fa-arrow-up" style="color:#20a29e;"></i>
+ </a>
+
+ <!-- custom js file link  -->
+ <script src="./js/javascript.js"></script>
+
+ <!--icon cdn link-->
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script></body>
+
+</html>

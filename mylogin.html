@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISAM/LOGIN</title>
+    <!--page logo link-->
+    <link rel="icon" href="./images/favicon.png">
+    <!--boostrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+
+
+        .svg {
+            /* background-color: #7952b3; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        i {
+            color: #7952b3;
+            padding-right: 5px;
+        }
+
+        .form-check span {
+            color: #7952b3;
+
+            font-weight: bold;
+
+        }
+
+        .loginpage span {
+            color: #7952b3;
+            font-weight: bold;
+        }
+
+        .loginpage a {
+            text-decoration: none;
+        }
+
+        .row {
+            box-shadow: rgba(0, 0, 0, 1) !important;
+            border-radius: 30px;
+            background-color: #eee;
+            border: 1px solid #777;
+
+        }
+
+        .form-control:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #7952b3;
+            outline: 0;
+            box-shadow: 0 0 0 0.1rem #7952b3;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <header-component></header-component>
+
+    <!-- <?php
+    require('db.php');
+    session_start();
+    // When form submitted, check and create user session.
+    if (isset($_POST['submit'])) {
+        $email    = stripslashes($_REQUEST['email']);
+        $email    = mysqli_real_escape_string($con, $email);
+        $password = stripslashes($_REQUEST['password']);
+        $password = mysqli_real_escape_string($con, $password);
+        $scuss="success";
+        // Check user is exist in the database
+        $query    = "SELECT * FROM `details` WHERE email='$email'AND password='$password';";
+        $result = mysqli_query($con, $query) or die(mysql_error());
+        $rows = mysqli_num_rows($result);
+        if ($rows == 1) {
+          echo  "<div class='succ'>
+          <h3>Login Successfully  <br> <br><small>$email</small> <br><br>
+          <a href='../index.html'>Click here <span>Home</span> page..</a></h3> 
+          
+          </div>";
+         
+        }
+         else {
+            echo "<div class='succ'>
+          <h3 style='color:red;'>Incorrect Username/Password<br><br>
+          <a  href='mysignup.php' id='sign' >Click here <span>Signup</span> page..</a></h3> 
+          
+          </div>";
+        }
+
+    } 
+    else {
+?> -->
+    <div class="container pt-2 pb-2">
+        <div class="main p-2">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 text-center p-5 svg" style="background: #880ee6;">
+
+                    <img src="../images/login (1).svg" alt="" height="auto" width="80%">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 pt-5 pl-5 pr-5 pb-5">
+                    <h4 class="pb-5">Login</h4>
+                    <form>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4"> <i class="fas fa-envelope"></i>Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" name="email"
+                                    placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-row">
+
+                            <div class="form-group col-md-12">
+                                <label for="inputPassword4">
+                                    <i class="fas fa-key"></i>Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" name="password"
+                                    placeholder="Password">
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-success text-center" name="submit">Login</button>
+                    </form>
+                    <div class="loginpage text-center">
+                        <p><a href="mysignup.php" target="_blank">Don't have an account? <span>Sign Up</span></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 
+    <?php 
+    }
+?>
+  -->
+    <!-----footer wave----->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#20a29e" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+        height="100%" viewBox="0 0 1600 122" class="foot-wave">
+        <defs>
+            <clipPath id="clip-path">
+                <rect id="Rectangle_235" data-name="Rectangle 235" width="100%" height="130px"
+                    transform="translate(0 16716)" fill="#fff"></rect>
+            </clipPath>
+        </defs>
+        <g id="Mask_Group_30" data-name="Mask Group 30" transform="translate(0 -16716)" clip-path="url(#clip-path)">
+            <path id="Path_7023" data-name="Path 7023"
+                d="M-432,11068.729s528-510.405,1440-329.294S2648,10476,2648,10476v2128.061l-3080-24.7Z"
+                transform="translate(-148 6017)" opacity="1"></path>
+        </g>
+    </svg>
+
+
+    <!-- footer section -->
+    <footer-component></footer-component>
+
+    <!-- Bottom to Up section start -->
+    <a href="#pageup" class="scrollup" style="text-decoration: none;">
+        <i class="fas fa-arrow-up" style="color:#20a29e;"></i>
+    </a>
+
+    <!-- custom js file link  -->
+    <script src="../js/javascript.js"></script>
+
+</body>
+
+</html>

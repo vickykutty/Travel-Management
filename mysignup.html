@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOURISAM/SIGNUP</title>
+   <!--page logo link-->
+   <link rel="icon" href="./images/favicon.png">
+  <!--boostrap link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  <style>
+    @media (max-width:450px) {
+      .svg {
+        border-radius: 10px !important;
+
+      }
+    }
+
+    * {
+      text-decoration: none;
+    }
+
+    .svg {
+      /* background-color: #7952b3; */
+      box-shadow: rgba(0, 0, 0, 4) !important;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    }
+
+    i {
+      color: #7952b3;
+      padding-right: 5px;
+    }
+
+    .form-check span {
+      color: #7952b3;
+
+      font-weight: bold;
+
+    }
+
+    .loginpage span {
+      color: #7952b3;
+      font-weight: bold;
+    }
+
+    .loginpage a {
+      text-decoration: none;
+    }
+
+    .row {
+      box-shadow: rgba(0, 0, 0, 1) !important;
+      border-radius: 30px;
+      background-color: #eee;
+      border: 1px solid #777;
+
+    }
+
+    .form-control:focus {
+      color: #495057;
+      background-color: #fff;
+      border-color: #7952b3;
+      outline: 0;
+      box-shadow: 0 0 0 0.1rem #7952b3;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .form {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 300px;
+      color: white;
+      font-family: serif;
+      animation: fade 2s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .form a {
+      padding-left: 4px;
+      text-decoration: none;
+      color: #FC8A17;
+    }
+
+    .form label {
+      font-size: 26px;
+      color: red;
+    }
+
+    .form p {
+      margin-top: 30px;
+      color: red;
+    }
+
+    @media (max-width:767px) {
+      .form-control {
+        padding: 2.375rem 0.75rem !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- navbar section -->
+  <header-component></header-component>  
+
+  <!-- <?php
+    require('db.php');
+    // When form submitted, insert values into the database.
+    if (isset($_REQUEST['email'])) {
+        // removes backslashes
+        $username = stripslashes($_REQUEST['username']);
+        //escapes special characters in a string
+        $username = mysqli_real_escape_string($con, $username);
+        $email    = stripslashes($_REQUEST['email']);
+        $email    = mysqli_real_escape_string($con, $email);
+        $phno     =($_REQUEST['phno']);
+        $password = ($_REQUEST['password']);
+        $password = mysqli_real_escape_string($con, $password);
+        $area = ($_REQUEST['city']);
+        $state = ($_REQUEST['state']);
+        $pincode = ($_REQUEST['pincode']);
+        $create_datetime = date("Y-m-d H:i:s");
+        $query    = "INSERT into `details` (username,email,phno,password,area,state,pincode,create_datetime)
+                     VALUES ('$username', '$email','$phno','$password', '$area','$state','$pincode','$create_datetime')";
+        $result   = mysqli_query($con, $query);
+
+      
+        if ($result) {
+            echo "<div class='form'>
+                  <label>Your details successfully submitted..</label><br/>
+                  <p class='link'>Click here to <a href='login1.php'>Login</a> Page</p>
+                  </div>";
+        } 
+       
+        else {
+            
+            echo "<div  class='form'>
+            <label style='color:red;'>Your details not submitted..</label><br/>
+            <p class='link'>Click here to <a href='signup1.php'>Signup</a> again..</p>
+            </div>";
+        }
+    } else {
+?> -->
+  <div class="container pt-2 pb-2">
+    <div class="main p-2">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 text-center pt-5 svg" style="background: #880ee6;">
+
+          <img src="../images/login (2).svg" alt="" height="300px" width="80%">
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 pt-3 pl-5 pr-5 pb-5">
+          <h4 class="pb-2">Sign Up</h4>
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputuser"> <i class="fas fa-user"></i>Username</label>
+                <input type="text" class="form-control" id="inputuser" placeholder="Username" name="username" autofocus>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4"> <i class="fas fa-envelope"></i>Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+              </div>
+            </div>
+            <div class="form-row">
+
+              <div class="form-group col-md-6">
+                <label for="pass">
+                  <i class="fas fa-key"></i>Password</label>
+                <input type="password" class="form-control" name="password" autocomplete="current-password" required=""
+                  id="id_password" placeholder="Password">
+                <span><i class="fas fa-eye" id="togglePassword"></i></span>
+              </div>
+
+
+              <div class="form-group col-md-6">
+                <label for="pass1">
+                  <i class="fas fa-lock"></i> Re-enter Password</label>
+                <input type="password" class="form-control" name="conpasswd" autocomplete="current-password" required=""
+                  id="id_password" placeholder="Password">
+
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputmoblie">
+                  <i class="fas fa-mobile"></i>Moblie No</label>
+                <input type="number" class="form-control" id="inputmoblie" name="phno">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCity"><i class="fas fa-map-marker-alt"></i>City</label>
+                <input type="text" class="form-control" id="inputCity" name="city">
+              </div>
+            </div>
+            <div class="form-row">
+
+              <div class="form-group col-md-8">
+                <label for="inputState">
+                  <i class="fas fa-map-marker-alt"></i>State</label>
+                <select id="inputState" class="form-control" name="state">
+                  <option selected value="Tamilnadu">Tamilnadu</option>
+
+                </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputZip"><i class="fas fa-thumbtack"></i>Zip</label>
+                <input type="text" class="form-control" id="inputZip" name="pincode">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I agree <span>Terms & Condition</span>
+                </label>
+              </div>
+            </div>
+            <button type="submit" name="submit" class="btn btn-success text-center" value="SIGN UP">Sign up</button>
+          </form>
+          <div class="loginpage text-center">
+            <p><a href="login1.php" target="_blank">Already have an account? <span>Login</span></a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- 
+  <?php 
+    }
+  ?> -->
+   <!-----footer wave----->
+   <svg xmlns="http://www.w3.org/2000/svg" fill="#20a29e" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+   height="100%" viewBox="0 0 1600 122" class="foot-wave">
+   <defs>
+       <clipPath id="clip-path">
+           <rect id="Rectangle_235" data-name="Rectangle 235" width="100%" height="130px"
+               transform="translate(0 16716)" fill="#fff"></rect>
+       </clipPath>
+   </defs>
+   <g id="Mask_Group_30" data-name="Mask Group 30" transform="translate(0 -16716)" clip-path="url(#clip-path)">
+       <path id="Path_7023" data-name="Path 7023"
+           d="M-432,11068.729s528-510.405,1440-329.294S2648,10476,2648,10476v2128.061l-3080-24.7Z"
+           transform="translate(-148 6017)" opacity="1"></path>
+   </g>
+</svg>
+
+  <!-- footer section -->
+  <footer-component></footer-component>
+
+  <!-- Bottom to Up section start -->
+  <a href="#pageup" class="scrollup" style="text-decoration: none;">
+    <i class="fas fa-arrow-up" style="color:#20a29e;"></i>
+  </a>
+  <script>
+    // const state = false;
+    // function toggle() {
+    //   if (state) {
+    //     document.getElementById("pass").setAttribute("type", "pass");
+    //     state = false;
+    //   }
+    //   else {
+    //     document.getElementById("pass").setAttribute("type", "text");
+    //     document.getElementById("eyein").style.color = '#FC8A17';
+    //     state = true;
+
+    //   }
+    // }
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#id_password');
+
+    togglePassword.addEventListener('click', function (e) {
+      // toggle the type attribute
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      // toggle the eye slash icon
+      this.classList.toggle('fa-eye-slash');
+    });
+  </script>
+  <!-- custom js file link  -->
+  <script src="../js/javascript.js"></script>
+</body>
+
+</html>

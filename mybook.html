@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOURISAM/BOOK</title>
+    <!--page logo link-->
+    <link rel="icon" href="../images/favicon.png">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/book.css">
+
+
+    <!--boostrap link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   
+   <style>
+    .form-control:focus {
+        color: #495057;
+        background-color: #fff;
+        border-color:#000;
+        outline: 0;
+        box-shadow: none;
+    }
+
+
+    @media (max-width:767px) {
+        .form-control {
+            padding: 2.375rem 0.75rem !important;
+        }
+    }
+
+    .row {
+        background-color: #eee;
+        border-radius: 30px;
+
+    }
+
+    .slider {
+        background: url('../images/header-bg-3.png')
+    }
+
+    .display {
+        background-color: transparent !important;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+    </style>
+</head>
+
+<body id="pageup">
+
+   <!-- navbar section -->
+   <header-component></header-component>  
+
+
+    <div class="container pt-5 pb-5">
+        <form class="">
+            <h1 class="text-center pb-5 ">Book Your Trip!</h1>
+            <div class="row p-5">
+
+                <div class="col-md-12 pb-5">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" class="form-control" id="firstname"
+                                placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" class="form-control" id="lastname"
+                                placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="book_email">Email</label>
+                            <input type="email" name="book_email " class="form-control" id="book_email"
+                                placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Contact_Moblie_one">Moblie Number</label>
+                            <input type="number" name="moblieone" class="form-control" id="Contact_Moblie_one"
+                                placeholder="Moblie No">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Contact_Moblie_two">Moblie Number</label>
+                            <input type="number" name="moblietwo" class="form-control" id="Contact_Moblie_two"
+                                placeholder="Moblie No">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="people">
+                                How Many People
+                            </label>
+                            <select id="people" class="form-control" name="people">
+                                <option selected value="1">1</option>
+                                <option selected value="2">2</option>
+                                <option selected value="3">3</option>
+                                <option selected value="4">4</option>
+                                <option selected value="5">5</option>
+                                <option selected value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="package">
+                                Select Package</label>
+                            <select id="package" class="form-control" name="package">
+                                <option selected value="3500">Kerala Package</option>
+                                <option selected value="3500">Couttralam Package</option>
+                                <option selected value="3500">Ooty Package</option>
+                                <option selected value="3500">KolliHills Package</option>
+                                <option selected value="3500">Kerala Wonderla Package</option>
+                                <option selected value="3500">Kodaikanal Package</option>
+                                <option selected value="3500">Kodaikanal HoneyMoon Package</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="price">Price</label>
+                            <input type="number" class="form-control" id="price" placeholder="Your Amount is" readonly>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="State">
+                                State</label>
+                            <select id="State" class="form-control" name="state">
+                                <option selected value="Tamilnadu">Tamilnadu</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="city">city</label>
+                            <input type="text" name="city" class="form-control" id="city" placeholder="City">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="book_area">Address</label>
+                            <textarea class="form-control" id="book_area" rows="2" name="address"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="totalamount" class="text-warning display" >Total Amount</label>
+                            <input type="number" name="totalamount" class="form-control display" id="totalamount"
+                              readonly>
+                        </div>
+                        
+                        
+                    </div>
+                    <button class="btn btn-success text-center" type="submit">Submit</button>
+                </div>
+
+            </div>
+            <form>
+    </div>
+
+   <!-----footer wave----->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="#20a29e" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%"
+        height="100%" viewBox="0 0 1600 122" class="foot-wave">
+        <defs>
+            <clipPath id="clip-path">
+                <rect id="Rectangle_235" data-name="Rectangle 235" width="100%" height="130px"
+                    transform="translate(0 16716)" fill="#fff"></rect>
+            </clipPath>
+        </defs>
+        <g id="Mask_Group_30" data-name="Mask Group 30" transform="translate(0 -16716)" clip-path="url(#clip-path)">
+            <path id="Path_7023" data-name="Path 7023"
+                d="M-432,11068.729s528-510.405,1440-329.294S2648,10476,2648,10476v2128.061l-3080-24.7Z"
+                transform="translate(-148 6017)" opacity="1"></path>
+        </g>
+    </svg>
+
+
+    <!-- footer section -->
+    <footer-component></footer-component>
+
+
+    <!-- Bottom to Up section start -->
+    <a href="#pageup" class="scrollup" style="text-decoration: none;">
+        <i class="fas fa-arrow-up" style="color:#20a29e;"></i>
+    </a>
+    </script>
+    <!-- custom js file link  -->
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>
