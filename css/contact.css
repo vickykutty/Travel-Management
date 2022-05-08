@@ -1,0 +1,86 @@
+/*----contact section---*/
+.contact_section .contact {
+    background-color: var(--main-color1);
+}
+
+.contact_section h1 span {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.contact_section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.contact_section .form-control:focus {
+
+    border-color: var(--light-black);
+
+    box-shadow: none;
+}
+
+.contact_section label {
+    font-size: 12px !important;
+    font-weight: 900;
+    color: #fff;
+}
+
+.contact_section .form-control::placeholder {
+    font-size: 12px;
+}
+
+.contact_section button {
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 20px 10px 20px;
+}
+
+.contact_section .d-flex {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff !important;
+    padding-bottom: 33px !important;
+}
+
+.contact_section .col-md-4 {
+    border: 1px msolid var(--light-bg);
+}
+
+.contact_section a {
+    text-decoration: none !important;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.contact_section ion-icon {
+    font-size: 20px !important;
+    color: #fff;
+}
+
+@media(max-width:750px) {
+    .contact_section .form-control {
+        padding: 2.375rem 0.75rem !important;
+    }
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%;
+    position: relative;
+    height: 0;
+ }
+ 
+ .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+ }
+ 
